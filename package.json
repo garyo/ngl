@@ -39,7 +39,12 @@
       "\\.es6\\.js": "babel-jest"
     },
     "testRegex": "\\.spec\\.ts|kin.*test.ts$",
-    "testURL": "http://localhost"
+    "testURL": "http://localhost",
+    "moduleNameMapper": {
+      "\\.vert$": "<rootDir>/test/__mocks__/vert.js",
+      "\\.frag$": "<rootDir>/test/__mocks__/frag.js",
+      "\\.glsl$": "<rootDir>/test/__mocks__/frag.js"
+    }
   },
   "homepage": "https://github.com/arose/ngl#readme",
   "repository": {
